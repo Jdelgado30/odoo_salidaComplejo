@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+        <menuitem id="menu_salida_root" name="Salidas del Complejo"/>
+            <menuitem id="menu_salidas_main" name="Salidas" parent="menu_salida_root"/>
+                <menuitem id="menu_salidas" name="Salidas" parent="menu_salidas_main" action="open_view_salidas_tree"/>
+</odoo>
