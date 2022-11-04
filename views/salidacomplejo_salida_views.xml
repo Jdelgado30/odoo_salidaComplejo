@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+        <record id="sequence" model="ir.sequence">
+             <field name="name">Secuencia</field>
+             <field name="code">code_sc_1</field>
+             <field name="active">True</field>
+             <field name="prefix">SC</field>
+             <field name="padding">5</field>
+             <field name="number_next">1</field>
+        </record>
         <!-- View Form -->
         <record id="view_salida_form" model="ir.ui.view">
             <field name="name">salidacomplejo.salida.form</field>
@@ -8,11 +16,14 @@
             <field name="arch" type="xml">
                 <form string="salida">
                     <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name"/></h1>
+                        </div>
                         <group>
                             <group>
-                                <h1><field name="name"/></h1>
                                 <field name="id"/>
                                 <field name="contacts_id"/>
+                                <field name="direccion"/>
                             </group>
                         </group>
                     </sheet>
