@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+    <data>
+        <!-- View Form -->
+        <record id="view_salida_form" model="ir.ui.view">
+            <field name="name">salidacomplejo.salida.form</field>
+            <field name="model">salidacomplejo.salida</field>
+            <field name="arch" type="xml">
+                <form string="salida">
+                    <sheet>
+                        <group>
+                            <group>
+                                <h1><field name="name"/></h1>
+                                <field name="id"/>
+                                <field name="contacts_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
         <record id="open_view_salidas_tree" model="ir.actions.act_window">
             <field name="name">Salidas</field>
             <field name="res_model">salidacomplejo.salida</field>
             <field name="view_mode">tree,form</field>
         </record>
+    </data>
 </odoo>
