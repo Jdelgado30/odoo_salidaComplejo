@@ -21,9 +21,16 @@
                         </div>
                         <group>
                             <group>
+                                <field name="create_uid"/>
+                                <field name="create_date"/>
                                 <field name="id"/>
                                 <field name="contacts_id"/>
                                 <field name="direccion"/>
+                                <field name="solicitante"/>
+                                <field name="cargo"/>
+                            </group>
+                            <group>
+                                <field name="empresa"/>
                             </group>
                         </group>
                     </sheet>
