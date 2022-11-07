@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="salidacomplejo_report">
+            <t t-call="web.basic_layout">
+                <div class="page"><h1>Prueba</h1></div>
+            </t>
+        </template>
+    </data>
+</odoo>

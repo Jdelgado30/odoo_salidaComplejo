@@ -7,6 +7,8 @@
         'views/salidacomplejo_views.xml',
         'security/salidacomplejo_security.xml',
         'security/ir.model.access.csv',
+        'report/salidacomplejo_report.xml',
+        'report/salidacomplejo_report_template.xml',
     ],
     "depends": ['base','hr','contacts','mail'],
     "application": "True"

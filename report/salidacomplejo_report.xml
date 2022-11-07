@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="salidacomplejo_report_salida" model="ir.actions.report">
+            <field name="name">Salida del complejo</field>
+            <field name="model">salidacomplejo.salida</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">salida_complejo.salidacomplejo_report</field>
+            <field name="report_file">salida_complejo.salidacomplejo_report</field>
+            <field name="binding_model_id" ref="model_salidacomplejo_salida"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>
